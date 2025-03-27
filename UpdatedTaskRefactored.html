@@ -24,12 +24,11 @@
                             <div class="cart m-auto">
                                 <div class="outerCart">
                                     <div class="innerCart">
-                                        <input type="radio" value="value1" name="inputRadio"
-                                            style="margin: 10px 0px;" />
+                                        <input type="radio" value="value1" name="inputRadio" style="margin: 10px 0px;" />
                                         <div class="innerText">
                                             <h2>1st Unit <span>10% off</span></h2>
                                             <p class="secondPara">Standard price</p><br>
-                                            <div class="innerTextContent mt-4">
+                                            <div class="innerTextContent mt-4" style="display: none;">
                                                 <p class="secondPara">Standard price</p><br>
                                                 <div class="custom-select">
                                                     <label for="currency">Size</label>
@@ -52,7 +51,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="innerTextContent mt-2">
+                                            <div class="innerTextContent mt-2" style="display: none;">
                                                 <div class="custom-select">
                                                     <label for="currency">Size</label>
                                                     <select id="currency" name="currency">
@@ -89,12 +88,11 @@
                             <div class="cart m-auto">
                                 <div class="outerCart">
                                     <div class="innerCart">
-                                        <input type="radio" value="value2" name="inputRadio"
-                                            style="margin: 10px 0px;" />
+                                        <input type="radio" value="value2" name="inputRadio" style="margin: 10px 0px;" />
                                         <div class="innerText">
                                             <h2>2nd Unit <span>10% off</span></h2>
                                             <p class="secondPara">Standard price</p><br>
-                                            <div class="innerTextContent mt-4">
+                                            <div class="innerTextContent mt-4" style="display: none;">
                                                 <p class="secondPara">Standard price</p><br>
                                                 <div class="custom-select">
                                                     <label for="currency">Size</label>
@@ -117,7 +115,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="innerTextContent mt-2">
+                                            <div class="innerTextContent mt-2" style="display: none;">
                                                 <div class="custom-select">
                                                     <label for="currency">Size</label>
                                                     <select id="currency" name="currency">
@@ -154,12 +152,11 @@
                             <div class="cart m-auto">
                                 <div class="outerCart">
                                     <div class="innerCart">
-                                        <input type="radio" value="value3" name="inputRadio"
-                                            style="margin: 10px 0px;" />
+                                        <input type="radio" value="value3" name="inputRadio" style="margin: 10px 0px;" />
                                         <div class="innerText">
                                             <h2>1st Unit <span>10% off</span></h2>
                                             <p class="secondPara">Standard price</p><br>
-                                            <div class="innerTextContent mt-4">
+                                            <div class="innerTextContent mt-4" style="display: none;">
                                                 <p class="secondPara">Standard price</p><br>
                                                 <div class="custom-select">
                                                     <label for="currency">Size</label>
@@ -182,7 +179,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="innerTextContent mt-2">
+                                            <div class="innerTextContent mt-2" style="display: none;">
                                                 <div class="custom-select">
                                                     <label for="currency">Size</label>
                                                     <select id="currency" name="currency">
@@ -240,20 +237,19 @@
                 // Function to replace the secondPara with innerTextContent
                 function replaceWithInnerTextContent() {
                     // For each cart item
-                cartItems.forEach((cart) => {
-                    const radio = cart.querySelector('input[name="inputRadio"]');
-                    radio.addEventListener('change', function () {
-                        resetDisplay(); // Reset all displays
-                        const innerTextContent = cart.querySelector('.innerTextContent');
-                        const secondPara = cart.querySelector('.secondPara');
+                    cartItems.forEach((cart) => {
+                        const radio = cart.querySelector('input[name="inputRadio"]');
+                        radio.addEventListener('change', function () {
+                            resetDisplay(); // Reset all displays
+                            const innerTextContent = cart.querySelector('.innerTextContent');
+                            const secondPara = cart.querySelector('.secondPara');
 
-                        if (secondPara && innerTextContent) {
-                            secondPara.style.display = 'none'; // Hide the Standard Price
-                            innerTextContent.style.display = 'flex'; // Show the dropdowns
-                        }
+                            if (secondPara && innerTextContent) {
+                                secondPara.style.display = 'none'; // Hide the Standard Price
+                                innerTextContent.style.display = 'flex'; // Show the dropdowns
+                            }
+                        });
                     });
-                });
-
                 }
 
                 // Initialize by hiding innerTextContent and displaying standard prices
@@ -269,8 +265,9 @@
                 // Initialize the display setup
                 resetDisplay();
                 replaceWithInnerTextContent();
-            })
-    </script>
+            });
+        </script>
+    </div>
 </body>
 
 </html>
