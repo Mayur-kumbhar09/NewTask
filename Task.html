@@ -12,10 +12,11 @@
 </head>
 
 <body>
-    <div class="continer-fluid m-0 p-0">
+    <div class="container-fluid m-0 p-0">
+
         <div class="row m-0 p-0">
             <div class="col-md-12 m-0 p-0 text-center">
-                <div class="container" style="padding: 20px;">
+                <div class="container my-2" style="padding: 20px;">
                     <div class="hr-sect">
                         <h1>YAY! It's BOGO</h1>
                     </div>
@@ -24,13 +25,14 @@
                             <div class="cart m-auto">
                                 <div class="outerCart">
                                     <div class="innerCart">
-                                        <input type="radio" style="margin: 10px 0px;" />
+                                        <input type="radio" value="value1" name="inputRadio"
+                                            style="margin: 10px 0px;" />
                                         <div class="innerText ">
                                             <h2>1st Unit <span>10% off</span></h2>
-                                            <p>Standard price</p><br>
+                                            <p class="secondPara">Standard price</p><br>
                                         </div>
                                         <div class="innerText">
-                                            <h2>$10.00 USD</h2>
+                                            <h2 class="get-price">$10.00 USD</h2>
                                             <p>$40.00 USD</p>
                                         </div>
                                     </div>
@@ -43,30 +45,58 @@
                             <div class="cart m-auto">
                                 <div class="outerCart">
                                     <div class="innerCart">
-                                        <input type="radio" style="margin: 10px 0px;" />
-                                        <div class="innerText ">
+                                        <input type="radio" value="value2" name="inputRadio"
+                                            style="margin: 10px 0px;" />
+                                        <div class="innerText">
                                             <h2>2nd Unit <span>10% off</span></h2>
-                                            <span>size</span>
-                                            <span>$</span>
-                                            <select name="size" id="">
-                                                <option value="">--Size--</option>
-                                                <option value="S">S</option>
-                                                <option value="M">M</option>
-                                                <option value="L">L</option>
-                                                <option value="XL">XL</option>
-                                                <option value="XXL">XXL</option>
-                                            </select>
-                                            <span>Colour</span>
-                                            <select name="color" id="">
-                                                <option value="">--Colour--</option>
-                                                <option value="Red">Red</option>
-                                                <option value="gray">gray</option>
-                                                <option value="blue">blue</option>
-                                                <option value="violate">violate</option>
-                                            </select>
+                                            <div class="innerTextContent mt-4">
+                                                <p class="secondPara">Standard price</p><br>
+                                                <div class="custom-select">
+                                                    <label for="currency">Size</label>
+                                                    <select id="currency" name="currency">
+                                                        <option value="">--select--</option>
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                        <option value="50">50</option>
+                                                    </select>
+                                                </div>
+                                                <div class="custom-select1">
+                                                    <label for="Colour">Colour</label>
+                                                    <select name="Colour" id="Colour">
+                                                        <option value="">--select--</option>
+                                                        <option value="Red">Red</option>
+                                                        <option value="gray">gray</option>
+                                                        <option value="blue">blue</option>
+                                                        <option value="violate">violate</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="innerTextContent mt-2">
+                                                <div class="custom-select">
+                                                    <label for="currency">Size</label>
+                                                    <select id="currency" name="currency">
+                                                        <option value="">--select--</option>
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                        <option value="50">50</option>
+                                                    </select>
+                                                </div>
+                                                <div class="custom-select1">
+                                                    <label for="Colour">Colour</label>
+                                                    <select name="Colour" id="Colour">
+                                                        <option value="">--select--</option>
+                                                        <option value="Red">Red</option>
+                                                        <option value="gray">gray</option>
+                                                        <option value="blue">blue</option>
+                                                        <option value="violate">violate</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="innerText">
-                                            <h2 >$10.00 USD</h2>
+                                            <h2 class="get-price">$10.00 USD</h2>
                                             <p>$40.00 USD</p><br>
                                         </div>
                                     </div>
@@ -74,32 +104,121 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row m-2 p-0">
+                        <div class="col-md-12">
+                            <div class="cart m-auto">
+                                <div class="outerCart">
+                                    <div class="innerCart">
+                                        <input type="radio" value="value3" name="inputRadio"
+                                            style="margin: 10px 0px;" />
+                                        <div class="innerText ">
+                                            <h2>1st Unit <span>10% off</span></h2>
+                                            <p class="secondPara">Standard price</p><br>
+                                        </div>
+                                        <div class="innerText">
+                                            <h2 class="get-price">$10.00 USD</h2>
+                                            <p>$40.00 USD</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-2">
+                    <div class="row m-auto p-0 w-50">
+                        <div class="col-md-12">
+                            <div class="delivert_section">
+                                <h3>Free Delivery</h3>
+                                <h4>Total Price: <span style="background-color: inherit;color: #000;font-size: 24px;"
+                                        class="total-price">$18.00</span> USD</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button class="btn btn-primary m-auto">+ Add new Cart</button>
+
             </div>
-        </div>
-    </div>
-    <script>
-        const innerCart = document.querySelector('.container');
-        const addNewCart = document.querySelector('.btn');
-        addNewCart.addEventListener('click', function () {
-            const newCart = document.createElement('.outerCart');
-            newCart.classList.add('innerCart');
-            console.log('add item into the cart')
-            newCart.innerHTML = `
-            <input type="radio"/>
-            <div class="innerText">
-                <h2>2nd Unit <span>10% off</span>
-                    </h2>
-                    <p>Standard price</p><br>
-                    </div>
-                    <div class="innerText">
-                        <h2 >$10.00 USD</h2>
-                        <p >$40.00 USD</p><br>
-                    </div>`;
-            innerCart.appendChild(newCart);
-        })
-    </script>
+            <script>
+                const mainCart = document.getElementsByClassName('cart');
+                const radio = document.getElementsByName('inputRadio');
+                const innerTextContent = document.getElementsByClassName('innerTextContent');
+                const para = document.querySelectorAll('secondPara');
+                for (let cart of mainCart) {
+                    cart.addEventListener('click', function () {
+                        if (para.length > 0) {
+                            for (let item of para) {
+                                item.style.display = "";
+                            }
+                        }
+                        radio.forEach(function (item) {
+                            item.checked = true;
+                        });
+                        for (let item of innerTextContent) {
+                            item.style.display = "flex";
+                            item.style.gap = "20px";
+                            item.style.alignItems = "center";
+                            item.style.justifyContent = "space-evenly";
+                        }
+                    });
+                }
+
+
+                const innerCart = document.querySelector('.container');
+                const addNewCart = document.querySelector('.btn');
+                addNewCart.addEventListener('click', function () {
+                    const newCart = document.createElement('container');
+                    newCart.classList.add('cart');
+                    newCart.style.margin = "auto";
+                    newCart.style.width = "48%";
+                    console.log('add item into the cart')
+                    newCart.innerHTML = `
+                        <div class="outerCart">
+                            <div class="innerCart">
+                                <input type="radio" style="margin: 10px 0px;" />
+                                <div class="innerText ">
+                                    <h2>3rd Unit <span>10% off</span></h2>
+                                        <p>Standard price</p><br>
+                                </div>
+                                <div class="innerText">
+                                    <h2 class="get-price">$20.00 USD</h2>
+                                    <p>$60.00 USD</p>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    innerCart.appendChild(newCart);
+                    const totalPriceElement = document.querySelector('.total-price');
+                    if (totalPriceElement) {
+                        // Update the total price after adding the new cart
+                        updateTotalPrice(newCart, totalPriceElement);
+                    } else {
+                        console.error('Total price element not found!');
+                    }
+                })
+
+                function updateTotalPrice(cart, totalPriceElement) {
+                    const h2Elements = document.querySelectorAll('.get-price');
+                    console.log("h2Element ", h2Elements);
+
+                    let totalPrice = 0;
+                    h2Elements.forEach(h2 => {
+                        const priceText = h2.textContent;
+                        console.log("price text", priceText);
+                        const price = parseFloat(priceText.replace(/[^\d.-]/g, ''));
+
+                        totalPrice += price;
+                    });
+
+                    console.log("total price: ", totalPrice);
+                    return totalPriceElement.textContent = formatPriceToUSD(totalPrice);
+                }
+
+                function formatPriceToUSD(price) {
+                    return `$${price.toFixed(2)}`;
+                }
+
+            </script>
 </body>
 
 </html>

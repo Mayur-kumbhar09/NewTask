@@ -7,24 +7,31 @@
 body {
     font-family: Arial, sans-serif;
 }
-
-h2 {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-h1{
+h1 {
     font-size: 2rem;
     color: rgb(252, 107, 130);
     font-weight: 700;
 }
-p{
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: rgb(252, 107, 130);
+    font-weight: 700;
+}
+
+p {
     font-size: 1.1rem;
     font-weight: 400;
     opacity: 0.89;
 }
+
 .innerText:nth-of-type(2) p:nth-of-type(2) {
     text-decoration: dashed;
-}   
+}
 
 /* cart style  */
 span {
@@ -92,4 +99,51 @@ input[type=radio] {
     font-size: 0px;
     line-height: 0px;
     margin: 0px 8px;
+}
+
+/* select style  */
+.custom-select {
+    position: relative;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.custom-select1 {
+    position: relative;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.innerTextContent {
+    display: none;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 5px;
+}
+
+.custom-select select {
+    width: 100%;
+    padding-left: 20px;
+    
+}
+
+.custom-select::before {
+    content: "$";
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Delivery section style  */
+.delivert_section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
